@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Whatsapp UI</string>
+    <string name="title">WhatsApp</string>
+    <string name="tab_layout_one"> Chat </string>
+    <string name="tab_layout_two"> Calls </string>
+    <string name="tab_layout_three"> Status </string>
 </resources>
