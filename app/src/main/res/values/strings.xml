@@ -4,4 +4,8 @@
     <string name="tab_layout_one"> Chat </string>
     <string name="tab_layout_two"> Calls </string>
     <string name="tab_layout_three"> Status </string>
+    <string name="user_name">Moein</string>
+    <string name="user_message">Hey There! Are you using whatsapp?</string>
+    <string name="user_chat_time">08:58</string>
+    <string name="chat_alert">2</string>
 </resources>
