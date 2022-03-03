@@ -55,7 +55,7 @@
                 android:text="@string/my_status"
                 android:textSize="18sp"
                 android:textColor="?attr/colorSecondary"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="12dp"
                 />
 
             <TextView
@@ -65,7 +65,7 @@
                 android:text="@string/tap_to_add_status_update"
                 android:textSize="14sp"
                 android:textColor="?attr/colorOnSecondary"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 />
 
         </LinearLayout>
@@ -95,6 +95,7 @@
         app:layout_constraintBottom_toTopOf="@id/floatingButtonCamera"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white"
+        app:borderWidth="0dp"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -110,6 +111,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white"
+        app:borderWidth="0dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,11 +29,11 @@ class MainActivity : AppCompatActivity() {
                         }
 
                         1 -> {
-                            tab.text = "CALLS"
+                            tab.text = "STATUS"
                         }
 
                         2 -> {
-                            tab.text = "STATUS"
+                            tab.text = "CALLS"
                         }
                     }
                 }
