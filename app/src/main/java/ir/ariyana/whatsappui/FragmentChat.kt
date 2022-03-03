@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import ir.ariyana.whatsappui.databinding.FragmentChatBinding
 
 class FragmentChat : Fragment() {
@@ -26,5 +28,6 @@ class FragmentChat : Fragment() {
         )
         val recyclerAdapter = RecyclerAdapter(data)
         binding.chatRecyclerView.adapter = recyclerAdapter
+        binding.chatRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.VERTICAL, false)
     }
 }
