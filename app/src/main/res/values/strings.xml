@@ -8,4 +8,5 @@
     <string name="user_message">Hey There! Are you using whatsapp?</string>
     <string name="user_chat_time">08:58</string>
     <string name="chat_alert">2</string>
+    <string name="new_message">New Message</string>
 </resources>
