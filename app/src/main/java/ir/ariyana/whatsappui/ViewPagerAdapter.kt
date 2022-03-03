@@ -17,11 +17,11 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
             }
 
             1 -> {
-                return FragmentCalls()
+                return FragmentStatus()
             }
 
             2 -> {
-                return FragmentStatus()
+                return FragmentCalls()
             }
 
             else -> {

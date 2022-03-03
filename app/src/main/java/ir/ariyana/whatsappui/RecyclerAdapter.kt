@@ -17,7 +17,7 @@ class RecyclerAdapter(private val data : ArrayList<Item>) : RecyclerView.Adapter
             binding.chatTimer.text = data[position].chatProfileLastMessageDate
             binding.chatAlert.text = data[position].chatProfileNewMessages.toString()
             Glide
-                .with(binding.root)
+                .with(binding.root.context)
                 .load(data[position].chatProfileImage)
                 .into(binding.profileImage)
         }
