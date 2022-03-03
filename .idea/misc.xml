@@ -8,8 +8,9 @@
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_calls.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
-        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_status.xml" value="0.4" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_status.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_layout.xml" value="0.4" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_status_layout.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>

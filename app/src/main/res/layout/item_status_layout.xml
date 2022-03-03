@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/itemStatusImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="start|center_vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/itemLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:orientation="vertical"
+            android:layout_gravity="start|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/itemProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="18sp"
+                android:textColor="?attr/colorSecondary"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/itemStatusUploadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_upload_time"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnSecondary"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        app:tint="@color/black_200"
+        />
+
+</LinearLayout>
