@@ -14,11 +14,12 @@
         android:orientation="horizontal"
         >
 
-        <ImageView
-            android:id="@+id/itemStatusImage"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/bg_circle"
+            android:src="@drawable/img_base_status"
+            android:rotation="-90"
             android:layout_marginStart="16dp"
             android:layout_gravity="start|center_vertical"
             />
