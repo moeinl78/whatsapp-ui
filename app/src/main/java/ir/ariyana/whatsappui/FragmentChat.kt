@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ir.ariyana.whatsappui.databinding.FragmentChatBinding
 
-class FragmentChat : Fragment() {
+class FragmentChat : Fragment(), RecyclerAdapter.DataEvent {
 
     lateinit var binding : FragmentChatBinding
     override fun onCreateView(
@@ -26,8 +26,12 @@ class FragmentChat : Fragment() {
             Item("https://www.blogads.de/account/themes/account/assets/pages/media/profile/profile_user.jpg", "Dan", "What are you doing tomorrow?", "05/03/2018", 8),
             Item("https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg", "Adam", "Hey, How you doing", "YESTERDAY", 2),
         )
-        val recyclerAdapter = RecyclerAdapter(data)
+        val recyclerAdapter = RecyclerAdapter(data, this)
         binding.chatRecyclerView.adapter = recyclerAdapter
         binding.chatRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.VERTICAL, false)
+    }
+
+    override fun onClickOpenChat(item: Item, itemPosition: Int) {
+        TODO("Not yet implemented")
     }
 }
