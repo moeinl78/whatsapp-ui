@@ -19,6 +19,7 @@
         >
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/searchBackButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -29,6 +30,7 @@
             />
 
         <EditText
+            android:id="@+id/searchEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -36,7 +38,7 @@
             android:paddingStart="8dp"
             android:layout_marginStart="42dp"
             android:inputType="text"
-            android:background="null"
+            android:background="@null"
             />
 
     </FrameLayout>
@@ -78,7 +80,6 @@
             android:layout_height="wrap_content"
             android:text="Videos"
             android:textColor="@color/black_200"
-
             app:chipIcon="@drawable/ic_baseline_videocam_24"
             app:chipMinHeight="42dp"
             app:chipStartPadding="8dp"

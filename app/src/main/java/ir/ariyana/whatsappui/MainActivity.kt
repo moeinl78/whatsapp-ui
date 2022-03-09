@@ -40,8 +40,11 @@ class MainActivity : AppCompatActivity() {
             }
         )
         mediator.attach()
-        binding.appHeaderSearchIcon.setOnClickListener {
 
+        binding.appHeaderSearchIcon.setOnClickListener {
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.add(R.id.searchDialogSheet, FragmentSearchSheet())
+            transaction.commit()
         }
     }
 }
