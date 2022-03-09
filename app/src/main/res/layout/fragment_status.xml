@@ -97,7 +97,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white"
         app:borderWidth="0dp"
-        app:fabSize="mini"
+        app:fabCustomSize="48dp"
+        app:rippleColor="@color/black_200"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -114,6 +115,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white"
         app:borderWidth="0dp"
+        app:rippleColor="@color/teal_green_dark"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

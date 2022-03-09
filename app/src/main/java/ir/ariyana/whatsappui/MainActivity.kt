@@ -40,5 +40,8 @@ class MainActivity : AppCompatActivity() {
             }
         )
         mediator.attach()
+        binding.appHeaderSearchIcon.setOnClickListener {
+
+        }
     }
 }

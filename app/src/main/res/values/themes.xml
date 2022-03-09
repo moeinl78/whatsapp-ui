@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.WhatsappUI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green_900</item>
+        <item name="colorPrimary">@color/teal_green_dark</item>
         <item name="colorPrimaryVariant">@color/green_500</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/white"
+    android:elevation="8dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/searchFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_gravity="start|center_vertical"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Search..."
+            android:paddingStart="8dp"
+            android:layout_marginStart="42dp"
+            android:inputType="text"
+            android:background="null"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/searchDividerView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFrameLayout"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDividerView"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos"
+            android:textColor="@color/black_200"
+            android:layout_marginStart="4dp"
+            app:chipIcon="@drawable/ic_baseline_photo_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textColor="@color/black_200"
+
+            app:chipIcon="@drawable/ic_baseline_videocam_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Links"
+            android:textColor="@color/black_200"
+            app:chipIcon="@drawable/ic_baseline_link_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIFs"
+            android:textColor="@color/black_200"
+            app:chipIcon="@drawable/ic_baseline_gif_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio"
+            android:textColor="@color/black_200"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:chipIcon="@drawable/ic_baseline_headset_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents"
+            android:textColor="@color/black_200"
+            app:chipIcon="@drawable/ic_baseline_article_24"
+            app:chipMinHeight="42dp"
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="8dp"
+            />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
