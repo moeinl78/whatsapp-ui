@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option_1"
+        android:title="New group" />
+
+    <item android:id="@+id/option_2"
+        android:title="New broadcast" />
+
+    <item android:id="@+id/option_3"
+        android:title="Linked devices" />
+
+    <item android:id="@+id/option_4"
+        android:title="Starred messages" />
+
+    <item android:id="@+id/option_5"
+        android:title="Settings" />
+</menu>

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ir.ariyana.whatsappui.databinding.DialogSearchBinding
 
-class FragmentSearchSheet : Fragment() {
+class FragmentSearchSheet(private val dataEvent : OnBackPress) : Fragment() {
 
     lateinit var binding : DialogSearchBinding
     override fun onCreateView(
@@ -20,5 +20,11 @@ class FragmentSearchSheet : Fragment() {
         binding = DialogSearchBinding.inflate(layoutInflater, null, false)
         dialog.setView(binding.root)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.searchBackButton.setOnClickListener {
+            dataEvent.onBackPress()
+        }
     }
 }

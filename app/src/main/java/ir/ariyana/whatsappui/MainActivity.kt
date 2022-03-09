@@ -2,11 +2,18 @@ package ir.ariyana.whatsappui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import android.view.View
+import android.widget.Button
+import android.widget.PopupMenu
+import androidx.annotation.MenuRes
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import ir.ariyana.whatsappui.databinding.ActivityMainBinding
+import ir.ariyana.whatsappui.databinding.DialogSearchBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnBackPress {
 
     lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,10 +48,37 @@ class MainActivity : AppCompatActivity() {
         )
         mediator.attach()
 
+        // show search section fragment
         binding.appHeaderSearchIcon.setOnClickListener {
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.add(R.id.searchDialogSheet, FragmentSearchSheet())
+            transaction.add(R.id.searchDialogSheet, FragmentSearchSheet(this))
+            transaction.addToBackStack("tag")
             transaction.commit()
         }
+
+        // show popup menus
+        binding.appHeaderMenuIcon.setOnClickListener { item ->
+            showMenu(item, R.menu.menu_popup)
+        }
+    }
+
+    private fun showMenu(v : View, @MenuRes menuRes : Int) {
+        val popup = PopupMenu(this, v)
+        popup.menuInflater.inflate(menuRes, popup.menu)
+
+        popup.setOnMenuItemClickListener { menuItem: MenuItem ->
+            // Respond to menu item click.
+            true
+        }
+
+        popup.setOnDismissListener {
+            // Respond to popup being dismissed.
+        }
+        // Show the popup menu.
+        popup.show()
+    }
+
+    override fun onBackPress() {
+        onBackPressed()
     }
 }
