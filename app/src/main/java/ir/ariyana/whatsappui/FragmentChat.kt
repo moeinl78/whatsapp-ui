@@ -29,6 +29,10 @@ class FragmentChat : Fragment(), RecyclerAdapter.DataEvent {
         val recyclerAdapter = RecyclerAdapter(data, this)
         binding.chatRecyclerView.adapter = recyclerAdapter
         binding.chatRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.VERTICAL, false)
+
+        binding.fragmentChatFAB.setOnClickListener {
+
+        }
     }
 
     override fun onClickOpenChat(item: Item, itemPosition: Int) {
