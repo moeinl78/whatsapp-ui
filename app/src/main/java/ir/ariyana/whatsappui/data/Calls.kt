@@ -1,4 +1,4 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.data
 
 data class Calls(
     val callProfileImage : String,

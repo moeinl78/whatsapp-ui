@@ -1,10 +1,10 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import ir.ariyana.whatsappui.databinding.FragmentChatBinding
+import ir.ariyana.whatsappui.data.Item
 import ir.ariyana.whatsappui.databinding.ItemLayoutBinding
 
 class RecyclerAdapter(private val data : ArrayList<Item>, private val dataEvent : DataEvent) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {

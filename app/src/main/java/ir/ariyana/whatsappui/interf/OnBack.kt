@@ -1,4 +1,4 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.interf
 
 interface OnBackPress {
     fun onBackPress()

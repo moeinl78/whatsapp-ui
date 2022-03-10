@@ -4,14 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
 import android.widget.PopupMenu
 import androidx.annotation.MenuRes
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import ir.ariyana.whatsappui.databinding.ActivityMainBinding
-import ir.ariyana.whatsappui.databinding.DialogSearchBinding
+import ir.ariyana.whatsappui.fragments.FragmentSearchSheet
+import ir.ariyana.whatsappui.interf.OnBackPress
 
 class MainActivity : AppCompatActivity(), OnBackPress {
 

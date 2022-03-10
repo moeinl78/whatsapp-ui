@@ -1,4 +1,4 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import ir.ariyana.whatsappui.interf.OnBackPress
 import ir.ariyana.whatsappui.databinding.DialogSearchBinding
 
 class FragmentSearchSheet(private val dataEvent : OnBackPress) : Fragment() {

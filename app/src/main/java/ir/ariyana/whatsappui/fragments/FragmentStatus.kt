@@ -1,4 +1,4 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import ir.ariyana.whatsappui.adapters.RecyclerAdapterStatus
+import ir.ariyana.whatsappui.data.Status
 import ir.ariyana.whatsappui.databinding.FragmentStatusBinding
 
 class FragmentStatus : Fragment() {

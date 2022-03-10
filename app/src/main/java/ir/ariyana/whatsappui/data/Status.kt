@@ -1,4 +1,4 @@
-package ir.ariyana.whatsappui
+package ir.ariyana.whatsappui.data
 
 data class Status(
     val statusProfileImage : String,
