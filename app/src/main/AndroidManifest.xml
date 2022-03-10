@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatsappUI">
         <activity
+            android:name=".MainActivityRoom"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityChat"
             android:exported="false" />
         <activity

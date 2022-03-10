@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityRoom"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/roomAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/roomCollapsingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/roomToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:layout_collapseMode="pin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/roomToolbarFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/roomBackFAB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:backgroundTint="@color/teal_green_dark"
+                        app:elevation="0dp"
+                        app:borderWidth="0dp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                        app:tint="@color/white"
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/roomProfileImage"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/img_base_status"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/roomProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/user_name"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/roomVideoCamIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_baseline_videocam_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="78dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/white"
+                        app:rippleColor="@color/gray"
+                        />
+
+                    <ImageView
+                        android:id="@+id/roomPhoneIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_baseline_phone_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/white"
+                        app:rippleColor="@color/gray"
+                        />
+
+                    <ImageView
+                        android:id="@+id/roomPhoneIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_menu"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/white"
+                        app:rippleColor="@color/gray"
+                        />
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roomNestedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8c291"
+        android:alpha="0.6"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roomToolsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="56dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="0dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/roomCardViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/roomStickerPack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_emoji_emotions_24"
+                android:layout_marginStart="16dp"
+                app:tint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/roomMessageEditText"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:hint="Message"
+                android:background="@null"
+                />
+
+            <ImageView
+                android:id="@+id/roomAttachIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_attach_file_24"
+                android:rotation="-36"
+                android:layout_marginStart="8dp"
+                app:tint="@color/gray"
+                />
+
+            <ImageView
+                android:id="@+id/roomCameraIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:tint="@color/gray"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/roomMicIconFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="12dp"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:backgroundTint="@color/green_500"
+        app:fabCustomSize="46dp"
+        app:rippleColor="@color/green_900"
+        app:srcCompat="@drawable/ic_baseline_mic_24"
+        app:tint="@color/white"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
