@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide
 import ir.ariyana.whatsappui.data.Item
 import ir.ariyana.whatsappui.databinding.ItemLayoutBinding
 
-class RecyclerAdapter(private val data : ArrayList<Item>, private val dataEvent : DataEvent) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(private val data : ArrayList<Item>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding : ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -20,10 +20,6 @@ class RecyclerAdapter(private val data : ArrayList<Item>, private val dataEvent 
                 .with(binding.root.context)
                 .load(data[position].chatProfileImage)
                 .into(binding.profileImage)
-
-            itemView.setOnClickListener {
-                dataEvent.onClickOpenChat(data[adapterPosition], adapterPosition)
-            }
         }
     }
 
@@ -38,9 +34,5 @@ class RecyclerAdapter(private val data : ArrayList<Item>, private val dataEvent 
 
     override fun getItemCount(): Int {
         return data.size
-    }
-
-    interface DataEvent {
-        fun onClickOpenChat(item : Item, itemPosition : Int)
     }
 }
