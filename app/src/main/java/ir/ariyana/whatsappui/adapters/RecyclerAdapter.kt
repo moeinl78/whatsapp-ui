@@ -1,9 +1,11 @@
 package ir.ariyana.whatsappui.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import ir.ariyana.whatsappui.MainActivityRoom
 import ir.ariyana.whatsappui.data.Item
 import ir.ariyana.whatsappui.databinding.ItemLayoutBinding
 
@@ -12,6 +14,7 @@ class RecyclerAdapter(private val data : ArrayList<Item>) : RecyclerView.Adapter
     inner class ViewHolder(private val binding : ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bindData(position: Int) {
+
             binding.profileName.text = data[position].chatProfileName
             binding.profileMessage.text = data[position].chatProfileLastMessage
             binding.chatTimer.text = data[position].chatProfileLastMessageDate
@@ -20,6 +23,11 @@ class RecyclerAdapter(private val data : ArrayList<Item>) : RecyclerView.Adapter
                 .with(binding.root.context)
                 .load(data[position].chatProfileImage)
                 .into(binding.profileImage)
+
+            itemView.setOnClickListener {
+                val intent = Intent(binding.root.context, MainActivityRoom::class.java)
+                binding.root.context.startActivity(intent)
+            }
         }
     }
 

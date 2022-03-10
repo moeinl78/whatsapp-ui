@@ -114,7 +114,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/roomNestedView"
+        android:id="@+id/roomRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#f8c291"
