@@ -15,6 +15,7 @@
         >
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newGroupStaticIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="false"
@@ -27,7 +28,7 @@
             />
 
         <TextView
-            android:id="@+id/profileName"
+            android:id="@+id/newGroupTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New group"
