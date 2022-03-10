@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_baseline_group_24"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            app:backgroundTint="@color/green_500"
+            app:tint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New group"
+            android:textSize="18sp"
+            android:textColor="@color/black_200"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="96dp"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
