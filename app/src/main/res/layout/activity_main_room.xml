@@ -120,12 +120,13 @@
         android:background="#f8c291"
         android:alpha="0.6"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:listitem="@layout/item_message"
         />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/roomToolsCardView"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:layout_gravity="bottom|start"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="8dp"
@@ -190,7 +191,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="10dp"
         app:borderWidth="0dp"
         app:elevation="0dp"
         app:backgroundTint="@color/green_500"

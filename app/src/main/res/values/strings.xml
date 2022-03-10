@@ -13,4 +13,5 @@
     <string name="tap_to_add_status_update">Tap to add status update</string>
     <string name="status_upload_time">Two Hours ago</string>
     <string name="call_date">January 22, 7:46 PM</string>
+    <string name="message_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
 </resources>

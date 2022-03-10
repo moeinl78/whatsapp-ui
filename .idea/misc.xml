@@ -7,7 +7,7 @@
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout-v21/fragment_chat.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/activity_main_chat.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/activity_main_room.xml" value="0.264" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/activity_main_room.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/dialog_search.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_calls.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
@@ -15,6 +15,7 @@
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/fragment_status.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_calls_layout.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_layout.xml" value="0.4" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_message.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_new_chat.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_new_contact.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/WhatsappUI/app/src/main/res/layout/item_new_group.xml" value="0.2526041666666667" />
